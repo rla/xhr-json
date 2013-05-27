@@ -1,0 +1,9 @@
+{
+    "name": "rla-xhr-json",
+    "version": "0.0.1",
+    "devDependencies": {
+        "mocha": "1.9.0",
+        "chai": "1.x",
+        "express": "3.x"
+    }
+}
