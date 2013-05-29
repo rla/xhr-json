@@ -4,6 +4,11 @@ check:
 	jshint xhr-json.js tests/
 
 test:
-	mocha-phantomjs -R dot http://localhost:4444/
+	mocha-phantomjs --no-color --reporter tap http://localhost:4444/
 
-.PHONY: test check
+serve-and-test:
+	tests/run.sh
+
+ci: check serve-and-test
+
+.PHONY: test serve-and-test check ci

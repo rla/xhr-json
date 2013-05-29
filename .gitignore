@@ -1,2 +1,3 @@
 node_modules/
-
+.log-ci-config
+.log-ci-last-build
