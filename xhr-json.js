@@ -36,7 +36,7 @@ var XHRJSON = (function() {
     // Executes the DELETE request.
     // cb - called at end.
 
-    module.del = module.delete = function(url, cb) {
+    module.del = module['delete'] = function(url, cb) {
         request('DELETE', url, cb);
     };
 
